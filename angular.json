@@ -2,13 +2,9 @@
   "version": 2,
   "projects": {
     "about": "apps/about",
-    "about-e2e": "apps/about-e2e",
     "cart": "apps/cart",
-    "cart-e2e": "apps/cart-e2e",
     "host": "apps/host",
-    "host-e2e": "apps/host-e2e",
     "salte-federation": "apps/salte-federation",
-    "shop": "apps/shop",
-    "shop-e2e": "apps/shop-e2e"
+    "shop": "apps/shop"
   }
 }

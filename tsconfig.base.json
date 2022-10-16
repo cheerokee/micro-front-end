@@ -9,29 +9,38 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": ["es2020", "dom","esnext.asynciterable"],
+    "paths": {
+      "shared/core-shared": ["libs/shared/core-shared/src/index.ts"]
+    },
+    "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "noImplicitAny": false,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
-    "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "paths": {},
-    "rootDir": "."
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true,
+    "fullTemplateTypeCheck": true,
+    "enableIvy": true
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

@@ -5,10 +5,14 @@ import { RouterModule } from '@angular/router';
 import { RemoteEntryComponent } from './entry.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { remoteRoutes } from './entry.routes';
+import { SharedModule } from "shared/core-shared";
 
 @NgModule({
   declarations: [RemoteEntryComponent, NxWelcomeComponent],
-  imports: [CommonModule, RouterModule.forChild(remoteRoutes)],
+  imports: [
+    SharedModule,
+    RouterModule.forChild(remoteRoutes)
+  ],
   providers: [],
 })
 export class RemoteEntryModule {}

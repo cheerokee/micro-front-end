@@ -1,0 +1,15 @@
+<div  class="login-app">
+  <form [formGroup]="form" class="login-form">
+    <label>
+      Username:
+      <input [formControlName]="'username'" type="text" class="form-control"/>
+    </label>
+    <label>
+      Password:
+      <input [formControlName]="'password'" type="password" name="password"  />
+    </label>
+    <button type="submit">Login</button>
+  </form>
+  <div>User is logged in!</div>
+</div>
+{{ form.value | json }}

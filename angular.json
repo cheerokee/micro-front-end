@@ -4,6 +4,7 @@
     "about": "apps/about",
     "cart": "apps/cart",
     "host": "apps/host",
+    "shared-core-shared": "libs/shared/core-shared",
     "shop": "apps/shop"
   }
 }

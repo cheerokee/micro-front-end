@@ -4,7 +4,6 @@
     "about": "apps/about",
     "cart": "apps/cart",
     "host": "apps/host",
-    "salte-federation": "apps/salte-federation",
     "shop": "apps/shop"
   }
 }
